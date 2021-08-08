@@ -1,0 +1,50 @@
+
+
+<ion-content>
+
+  <div class="login_bg_bx" >
+    <div class="ion-text-center logo_bx">
+    
+      <img src="https://picxinity.com/images/logo.png">
+
+   <p>Let's Capture The World Together.</p>
+    </div>
+
+
+  
+    <form class="lgn_frm">
+      <div class="ion-text-center pd-3">
+    <h1 class="ion-text-center ">Verify Mobile</h1>
+  </div>
+
+  <div class="ion-text-center nmbx">
+<p>Check 6 digit OTP you have received on your mobile Number ( <b> +91 7428960187</b> ) <br><br><u><a color="primary">Change Number</a></u></p>
+</div>
+
+      <ion-item>
+        <ion-label position="floating" class="otpbx" >Enter 6 Digit OTP</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+
+   
+      <ion-button size="large"  (click)="RedirectTo('get-start')" shape="round" class="theme-btn" expand="full" color="primary">Verify</ion-button>
+  
+   
+
+     <h5  class="ion-text-center ">Or</h5>
+    
+     <!-- <ion-button size="large" (click)="RedirectTo('signup')" shape="round" class="theme-btn" expand="full" color="light">Create New Account</ion-button> -->
+
+    <div class="ion-text-center nmbx">
+      <h5>Didn't received any otp ?  <a color="primary"  (click)="RedirectTo('login')" >&nbsp;Resend OTP</a></h5>
+    </div>
+
+
+    
+
+    </form>
+
+  </div>
+
+</ion-content>

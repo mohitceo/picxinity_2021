@@ -1,0 +1,36 @@
+.logo_bx img{
+
+    border-radius:10px;
+    box-shadow:0 0 20px 0 rgba(0, 0, 0, 0.034);
+    width:25%;
+}
+.login_bg_bx{
+
+    padding:20px;
+}
+
+.lgn_frm{
+    margin-top:50px;
+}
+
+
+.theme-btn{    
+    text-transform: capitalize;
+    margin: 20px auto ;
+    box-shadow:0 0 20px 0 rgba(0, 0, 0, 0.034);
+}
+
+.nmbx{padding:10px 0;}
+
+.theme-btn ion-icon{margin-right: 10px;
+
+
+}
+
+.pd-3{padding:30px 0;}
+
+::ng-deep .native-input.sc-ion-input-md {
+    font-size: 20px;
+    text-align: center;
+
+}

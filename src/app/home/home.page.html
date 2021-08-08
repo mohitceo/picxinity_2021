@@ -1,0 +1,65 @@
+
+<ion-content [fullscreen]="true">
+
+
+  <ion-content fullscreen class="ion-padding" scroll-y="false">
+   
+
+    <div class="ion-text-center">
+      <img src="https://picxinity.com/images/main-logo.png" class="logo" alt="picxinity"/>
+    </div>
+
+    <ion-slides #starterSlide pager="true"  pager="false" >
+
+      <ion-slide>
+        <div class="slide">
+          <img src="https://cloud.picxinity.com/cloud21/app/14052021/dataimages/starter-slide1.jpg"/>
+          <h2>Welcome To <b>Picxinity</b></h2>
+          <p>  <b>Picxinity</b> is the best online photography platform. Single place for millons of photographers.</p>
+        </div>
+
+     <div class="sarterNav">
+      <ion-button (click)="starterSlide.slideNext()" > Next </ion-button>
+     </div>
+     
+      </ion-slide>
+
+      <ion-slide>
+        <img src="https://ionicframework.com/docs/demos/api/slides/slide-2.png"/>
+        <h2>Find Photographers</h2>
+        <p><b>Picxinity</b> is the fastest growing online photography community you can find professional and affordable photographers near by you.</p>
+        <div class="sarterNav">
+        <ion-button color="light" (click)="starterSlide.slidePrev()" item-left > Back </ion-button>
+        <ion-button (click)="starterSlide.slideNext()" item-right > Next </ion-button>
+        </div>
+      </ion-slide>
+
+      <ion-slide>
+        <img src="https://ionicframework.com/docs/demos/api/slides/slide-3.png"/>
+        <h2>Earn With Picxinity</h2>
+        <p><b>Are you photographer?</b> If you are a photographer then you can earn with your photography on Picxinity.</p>
+     
+        <div class="sarterNav">
+        <ion-button (click)="starterSlide.slidePrev()" color="light" item-left> Back </ion-button>
+        <ion-button (click)="starterSlide.slideNext()" item-right> Next </ion-button>
+        </div>
+      </ion-slide>
+
+      <ion-slide>
+        <img src="https://ionicframework.com/docs/demos/api/slides/slide-4.png"/>
+        <h2>Let's Get Ready?</h2>
+
+        
+      
+          <ion-button  color="primary" (click)="RedirectTo('login')">Continue
+           &nbsp;<ion-icon color="light" name="arrow-forward"></ion-icon>
+        </ion-button>
+      
+        
+      </ion-slide>
+      
+    </ion-slides>
+  </ion-content>
+
+
+</ion-content>

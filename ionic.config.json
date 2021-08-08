@@ -1,0 +1,12 @@
+{
+  "name": "picxinity",
+  "integrations": {},
+  "type": "angular",
+  "path": "/endpoints",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://cors.api.com/api"
+    }
+  ]
+}

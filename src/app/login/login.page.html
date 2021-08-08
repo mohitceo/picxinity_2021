@@ -1,0 +1,48 @@
+
+
+<ion-content>
+
+  <div class="login_bg_bx" >
+    <div class="ion-text-center logo_bx">
+    
+      <img src="https://picxinity.com/images/logo.png">
+
+   <p>Let's Capture The World Together.</p>
+    </div>
+
+
+  
+    <form class="lgn_frm">
+      <div class="ion-text-center pd-3">
+    <h1 class="ion-text-center">Login</h1>
+</div>
+      <ion-item>
+        <ion-label position="floating">Mobile Number</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+        <div class="ion-text-right nmbx">
+        <a color="primary"  (click)="RedirectTo('forgot')">Forgot Password?</a>
+      </div>
+   
+      <ion-button size="large" shape="round" class="theme-btn" expand="full" color="primary">Login</ion-button>
+  
+   
+
+     <h5  class="ion-text-center ">Or</h5>
+    
+   
+  <ion-button size="large" (click)="RedirectTo('signup')" shape="round" class="theme-btn facebook" expand="full" color="light" >Create New Account</ion-button>
+   
+  
+
+</form>
+
+  </div>
+
+</ion-content>

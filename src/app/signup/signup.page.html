@@ -1,0 +1,68 @@
+
+
+<ion-content>
+
+  <div class="login_bg_bx" >
+    <div class="ion-text-center logo_bx">
+    
+      <img src="https://picxinity.com/images/logo.png">
+
+   <p>Let's Capture The World Together.</p>
+    </div>
+
+
+  
+    <form class="lgn_frm">
+      <div class="ion-text-center pd-3">
+    <h1 class="ion-text-center ">Create New Account</h1>
+  </div>
+
+
+  <ion-item>
+         
+    <ion-label>Select Country</ion-label>
+    <ion-select ok-text="Ok" cancel-text="Close" *ngFor="let country of countryData">
+      <ion-select-option value="{{ country.id }}">+{{ country.phonecode }} &nbsp; {{ country.iso3 }}</ion-select-option>
+     
+    </ion-select>
+  </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Mobile Number</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+
+<div class="cgkbx">
+     
+        <ion-checkbox color="primary" checked slot="start"></ion-checkbox>
+        <span>Accept Our <a href="https://picxinity.com/terms" target="_blank">Terms & Conditions</a> And <a href="https://picxinity.com/privacy" target="_blank">Privacy Policy</a>.</span>
+</div>
+
+   
+      <ion-button size="large" shape="round" class="theme-btn" (click)="RedirectTo('verifyotp')" expand="full" color="primary">Continue</ion-button>
+  
+   
+
+     <h5  class="ion-text-center ">Or</h5>
+    
+     <!-- <ion-button size="large" (click)="RedirectTo('signup')" shape="round" class="theme-btn" expand="full" color="light">Create New Account</ion-button> -->
+
+     <div class="ion-text-center nmbx">
+      <h5>Already have an account?  <a color="primary"  (click)="RedirectTo('login')" >&nbsp;Back To Login</a></h5>
+    </div>
+
+
+    <div class="wrapper">
+  
+      <a href="" class="button scbtn button--facebook"><ion-icon name="logo-facebook"></ion-icon> Signup With Facebook</a>
+      <a href="" class="button scbtn button--google"><ion-icon name="logo-google"></ion-icon> Signup With Google</a>
+     
+      
+    </div>
+
+    </form>
+
+  </div>
+
+</ion-content>
